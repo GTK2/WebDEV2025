@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    display: block;
+}
+.top {
+    width: 100%;
+    height: calc(100vh-120px);
+    display: flex;
+}
+
+/* header */
+.logo {
+    width: 200px;
+    height: 100px;
+}
+.logo img {
+    margin-top: 30px;
+}
+.main-menu {
+    margin-left: 20px;
+}
+.main-menu li {
+    width: 160px;
+    text-align: center;
+    background-color: #ff6363;
+}
+.main-menu a {
+    height: 40px;
+    align-content: center;
+    color: #232527;
+}
+.main-menu li:hover {
+    background-color: #C5172E;
+}
+.main-menu li:hover .sub-menu li {
+    transition: 1s;
+    height: 40px;
+}
+.main-menu li:not(:hover) .sub-menu li {
+    transition: 1s;
+    height: 0;
+}
+.sub-menu li {
+    height: 0;
+    background-color: #efefef;
+    overflow: hidden;
+}
+.spot-menu {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.spot-menu li {
+    width: 80px;
+    height: 25px;
+}
+.spot-menu li:first-child {
+    border-right: 1px solid #444;
+}
+.spot-menu a {
+    text-align: center;
+    color: #444;
+}
+
+
+/* contents */
+/* banner */
+.banner {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    width: 400px;
+}
+.banner img {
+    border-radius: 20px;
+    margin-top: 10px;
+    width: 100px;
+    height: 80px;
+}
+.banner > div {
+    width: 250px;
+    height: 100px;
+    margin-left: 10px;
+    align-content: center;
+}
+.arrow {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid #C5172E;
+    border-right: 5px solid #C5172E;
+    transform: rotate(45deg);
+}
+/* notice */
+.notice{
+    width: 400px;
+}
+.notice h4 {
+    width: 100px;
+    height: 30px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #ff6363;
+    text-align: center;
+    align-content: center;
+}
+.notice li {
+    width: 380px;
+    /* background-color: #efefef; */
+    padding-left: 10px;
+    border-bottom: 0.5px solid #ddd;
+}
+.notice a {
+    display: flex;
+    color: #444;
+}
+.notice p {
+    width: 270px;
+    height: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    align-content: center;
+
+}
+.notice span {
+    display: block;
+    width: 100px;
+    height: 40px;
+    align-content: center;
+    text-align: right;
+}
