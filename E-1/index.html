@@ -7,7 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script src="script.js" defer></script>
     <div class="wrap">
+        <dialog>
+            <form method="dialog">
+                <h2>전세계로 퍼져나가는 김치이야기</h2>
+                <p>
+                    김치는 전세계에서 한국을 대표하는 음식이 되었습니다.
+                    중국에서 김치를 자기네 고유음식이라고 주장하는 어이없는 일도 있지만
+                    그만큼 김치가 전세계에서 사랑받는 음식이 되었구나 하고 생각하게 됩니다.
+                </p>
+                <button>닫기</button>
+            </form>
+        </dialog>
         <div class="top">
             <header>
                 <div class="logo">
@@ -80,21 +92,79 @@
                     </ul>
                 </article>
                 <article class="gallery">
-                    <h4>갤러리리</h4>
+                    <h4>갤러리</h4>
                     <ul>
                         <li><a href="#">
-                            <p>전세계로 퍼져나가는 김치이야기</p>
-                            <span>2025.4.24.</span>
+                            <img src="image/gallery01.jpg" alt="gallery01">
+                            <p>맛있는 김치</p>
                         </a></li>
                         <li><a href="#">
-                            <p>김치를 활용한 다양한 요리</p>
-                            <span>2025.4.24.</span>
+                            <img src="image/gallery02.jpg" alt="gallery02">
+                            <p>김장하는 날</p>
+                        </a></li>
+                    </ul>
+                </article>
+                <article class="shortcut">
+                    <ul>
+                        <li><a href="#">
+                            <img src="image/shortcut01.jpg" alt="shortcut01">
+                            <p>나는 배추</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="image/shortcut02.jpg" alt="shortcut02">
+                            <p>나는 순무</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="image/shortcut03.jpg" alt="shortcut03">
+                            <p>나는 고추</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="image/shortcut04.jpg" alt="shortcut04">
+                            <p>나는 무</p>
                         </a></li>
                     </ul>
                 </article>
             </section>
-            <section class="visual"></section>
+            <section class="visual">
+                <ul>
+                    <li><a href="#">
+                        <img src="image/slide01.jpg" alt="slide01">
+                        <h1>배추김치</h1>
+                        <p>배추김치 맛있겠다</p>
+                    </a></li>
+                    <li><a href="#">
+                        <img src="image/slide02.jpg" alt="slide02">
+                        <h1>총각김치</h1>
+                        <p>총각김치 맛있겠다</p>
+                    </a></li>
+                    <li><a href="#">
+                        <img src="image/slide03.jpg" alt="slide03">
+                        <h1>김치는 역시</h1>
+                        <p>김치는 역시 항아리</p>
+                    </a></li>
+                    <li><a href="#">
+                        <img src="image/slide01.jpg" alt="slide01">
+                        <h1>배추김치</h1>
+                        <p>배추김치 맛있겠다</p>
+                    </a></li>
+                </ul>
+            </section>
         </div>
+        <footer>
+            <div class="logo footer-logo">
+                <a href="#"><img src="image/logo.png" alt="bt-logo"></a>
+            </div>
+            <div class="bottom">
+                <ul class="footer-menu">
+                    <li><a href="#">김치 소개</a></li>
+                    <li><a href="#">김치퓨전</a></li>
+                    <li><a href="#">체험프로그램</a></li>
+                    <li><a href="#">커뮤티니</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <div class="copyright">Copyright ⓒ WebDevDesign All Rights Reserved. </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
